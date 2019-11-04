@@ -1,0 +1,117 @@
+/* Preparing your canvas*/
+
+/* The * applies the style to everything */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Selecting the body */
+body {
+  /* BACKGROUND PROPERTIES
+  background-color
+  background-image
+  background-repeat
+  background-attachment
+  background-position
+   */
+   /* Shorthand background property, the above properties in the order they appear. If one of the property values is missing, as long as the rest are in order, then it doesn't matter. */
+  background: #cccccc url("bg.jpg") no-repeat center fixed;
+  background-size: cover;
+  /* setting the font-family */
+  font-family: sans-serif;
+}
+
+/* STYLING THE HEADER */
+header {
+  /* styling the border */
+  border-bottom: 3px double black;
+  /* centering the header in the middle of the page and making it take up 40% of its total width */
+  width: 40%;
+  margin: auto;
+  cursor: default;
+  margin-bottom: 20px;
+}
+
+/* STYLING THE PARAGRAPH INSIDE THE HEADER */
+header>div {
+  text-align: center;
+  font-weight: 900;
+  font-size: 50px;
+  padding: 30px;
+}
+
+/* STYLING THE NAV BAR */
+nav {
+  width: 40%;
+  margin: 30px auto;
+  text-align: center;
+}
+
+nav>a {
+  display: inline-block;
+  background-color: rgba(77, 77, 77, 0.3);
+  border-radius: 10%;
+  padding: 10px;
+}
+
+nav>a:hover {
+  background-color: black;
+  color: white;
+  transition: ease-in 0.8s;
+}
+
+a,
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+/* STYLING THE SECTION */
+section {
+  float: right;
+  width: 60%;
+  margin-left: 50px;
+  padding: 15px;
+}
+
+.post>h3 {
+  text-align: right;
+  margin: 20px 200px 20px 0;
+  color: #ffffe6;
+}
+
+.post>p {
+  text-align: justify;
+  color: #e6e6e6;
+  margin: 0px 200px;
+}
+
+/* STYLING THE ASIDE SECTION */
+
+aside {
+  float: left;
+  width: 30%;
+  padding: 20px 50px;
+}
+
+aside h4{
+  margin-bottom: 10px;
+}
+
+aside ul {
+  margin: 20px 10px;
+}
+
+aside li {
+  list-style-type: none;
+}
+
+/* STYLING THE FOOTER */
+footer {
+  clear: both;
+  color: #ffffe6;
+  padding: 10px;
+  padding-top: 80px;
+}
