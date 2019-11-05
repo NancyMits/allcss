@@ -1,4 +1,8 @@
-h1, h2, h3, p {
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h5, p {
   text-align: center;
 }
 .box {
@@ -132,4 +136,83 @@ h1, h2, h3, p {
 #texteffect4 span {
   font-size: 18px;
   writing-mode: vertical-rl;
+}
+
+/* Translate */
+
+.outer {
+  border: 1px solid red;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+}
+
+.inner {
+  background-color: black;
+  width: 50px;
+  height: 50px;
+  color: white;
+}
+
+#trans1 {
+  transform: translate(50px, 50px);
+}
+
+#trans2 {
+  transform: rotate(45deg);
+}
+
+#trans3 {
+  transform: scale(3, 1);
+}
+
+#trans4 {
+  transform: skew(-20deg, -20deg);
+}
+
+#trans5 {
+  transform: matrix(1, -0.3, 0, 1, 0, 0);
+}
+
+#trans6 {
+  border: 1px solid black;
+  background-color: none;
+  transform: rotateX(150deg);
+}
+
+#trans7 {
+  border: 1px solid black;
+  background-color: none;
+  transform: rotateY(150deg);
+}
+
+#trans8 {
+  border: 1px solid black;
+  background-color: none;
+  transform: rotateZ(150deg);
+}
+
+.transition-box {
+  width: 100px;
+  height: 100px;
+  background-color: #ff9966;
+}
+
+#transition1 {
+  transition: width 2s ease-in-out 1s, height 2s ease-out, transfrom 3s linear 4s, color 3s cubic-bezier(0.1, 0.7, 1.0, 0.1);
+}
+
+#transition1:hover {
+  width: 500px;
+  height: 50px;
+  transform: rotateZ(360deg);
+  color: white;
+}
+
+#transition2 {
+  transition: transform 10s cubic-bezier(0.1, 0.1, 0.5, 1.0);
+}
+
+#transition2:hover {
+  transform: translate(1000px, 0);
 }
