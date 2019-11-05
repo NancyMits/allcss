@@ -99,3 +99,37 @@ h1, h2, h3, p {
   width: 20%;
   box-shadow: 10px 10px 30px 30px #009999 inset;
 }
+
+#texteffect1 {
+  white-space: nowrap;
+  font-size: 18px;
+  width: 250px;
+  border: 1px solid black;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#texteffect1:hover {
+  overflow: visible;
+}
+
+#texteffect2 {
+  text-align: left;
+  font-size: 18px;
+  width: 250px;
+  border: 1px solid black;
+  word-wrap: break-word;
+}
+
+#texteffect3 {
+  text-align: left;
+  font-size: 18px;
+  width: 250px;
+  border: 1px solid black;
+  word-break: keep-all;
+}
+
+#texteffect4 span {
+  font-size: 18px;
+  writing-mode: vertical-rl;
+}
