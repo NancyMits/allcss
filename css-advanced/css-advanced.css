@@ -1,0 +1,101 @@
+h1, h2, h3, p {
+  text-align: center;
+}
+.box {
+  border: 1px solid black;
+  width: 80%;
+  margin: auto;
+  height: 100px;
+}
+
+#linear1 {
+  background-image: linear-gradient(to bottom right, #0099cc, #ff66ff);
+}
+
+#linear2 {
+  background-image: linear-gradient(to top left, #0099cc, #ff66ff);
+}
+
+#linear3 {
+  background-image: linear-gradient(270deg, #0099cc, #ff66ff);
+}
+
+#linear4 {
+  background-image: linear-gradient(50deg, red, orange, yellow, green, blue, indigo, violet);
+}
+
+#linear5 {
+  border: none;
+  background-image: linear-gradient(to right, rgba(255, 102, 255, 0), rgba(255, 102, 255, 1));
+}
+
+#linear6 {
+  background-image: repeating-linear-gradient(300deg, black, #0099cc 10%, #ff66ff 20%);
+}
+
+#linear7 {
+  background-image: radial-gradient(#009999, #ff9966, #cc99ff);
+}
+
+#linear8 {
+  background-image: radial-gradient(#009999 5%, #ff9966 15%, #cc99ff 60%);
+}
+
+#linear9 {
+  width: 100px;
+  background-image: radial-gradient(circle, #009999, #ff9966, #cc99ff);
+}
+
+#linear10 {
+  width: 100px;
+  background-image: radial-gradient(farthest-side at 20% 20%, #009999, #ff9966, #cc99ff);
+}
+
+#linear11 {
+  background-image: repeating-radial-gradient(farthest-side at 20% 20%, black, #0099cc 10%, #ff66ff 20%);
+}
+
+#shadow1 {
+  font-size: 50px;
+  text-shadow: 2px 5px;
+}
+
+#shadow2 {
+  font-size: 50px;
+  text-shadow: 2px 5px #cc99ff;
+}
+
+#shadow3 {
+  font-size: 50px;
+  text-shadow: 2px 5px 5px #cc99ff;
+}
+
+#shadow4 {
+  font-size: 50px;
+  text-shadow: -10px -10px 3px #cc99ff, 10px 10px 5px #ff66ff;
+}
+
+#shadow5 {
+  width: 20%;
+  box-shadow: 10px 10px;
+}
+
+#shadow6 {
+  width: 20%;
+  box-shadow: 10px 10px #009999;
+}
+
+#shadow7 {
+  width: 20%;
+  box-shadow: 10px 10px 5px #009999;
+}
+
+#shadow8 {
+  width: 20%;
+  box-shadow: 10px 10px 30px 30px #009999;
+}
+
+#shadow9 {
+  width: 20%;
+  box-shadow: 10px 10px 30px 30px #009999 inset;
+}
