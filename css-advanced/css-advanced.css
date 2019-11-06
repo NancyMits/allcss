@@ -400,3 +400,38 @@ body {
 .newspaper h2 {
   column-span: none;
 }
+
+/* RESIZE & OUTLINE */
+.res {
+  border: 1px solid red;
+  padding: 20px;
+  margin: 20px;
+  width: 300px;
+  resize: both;
+  overflow: auto;
+}
+
+.outl:hover {
+  border: none;
+  outline: 4px solid black;
+  outline-offset: 5px;
+}
+
+/* COUNTER */
+.count {
+  counter-reset: section;
+}
+
+.count h1 {
+  counter-reset: subsection;
+}
+
+.count h1::before {
+  counter-increment: section;
+  content: "Section " counter(section) ". ";
+}
+
+.count h2::before {
+  counter-increment: subsection;
+  content: counter(section) "." counter(subsection) " ";
+}
