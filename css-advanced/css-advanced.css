@@ -1,10 +1,17 @@
-* {
-  box-sizing: border-box;
+/* variables */
+:root {
+  --main-bg-color: beige;
 }
 
-h1, h2, h3, h5, p {
+body {
+  background-color: var(--main-bg-color);
+}
+
+* {
+  box-sizing: border-box;
   text-align: center;
 }
+
 .box {
   border: 1px solid black;
   width: 80%;
@@ -215,4 +222,181 @@ h1, h2, h3, h5, p {
 
 #transition2:hover {
   transform: translate(1000px, 0);
+}
+
+.anim {
+  width: 150px;
+  height: 150px;
+  background-color: #ccff99;
+  position: relative;
+  animation: example 5s ease 2s 4 alternate;
+  animation-fill-mode: both;
+}
+
+@keyframes example {
+  from {left: 0px; top:0px; background-color: #ccff99; color: red;}
+  to {left: 400px; top:0px; background-color: white; color: black;}
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 5px;
+  position: absolute;
+  z-index: 1;
+  right: 110%;
+  top: -5px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.tooltip  .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  border-width: 5px;
+  margin-top: -5px;
+  border-style: solid;
+  border-color: transparent transparent transparent black;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+#style1 {
+  border-radius: 50%;
+}
+
+#style2 {
+  border: 1px solid #999;
+  border-radius: 5px;
+  padding: 5px;
+  width: 150px;
+}
+
+#style2:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  cursor: pointer;
+}
+
+#style3 {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+.container {
+  max-width: 40%;
+  margin: auto;
+  position: relative;
+}
+
+.topleft {
+  position: absolute;
+  top: 2%;
+  left: 10%;
+}
+
+#style4 {
+  max-width: 100%;
+  height: auto;
+}
+
+.cont {
+  position: relative;
+  width: 200px;
+  margin: auto;
+}
+
+.image {
+  display: block;
+  width: 200px;
+  margin: auto;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height:100%;
+  width: 200px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.cont:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* PAGINATION */
+
+.center {
+  text-align: center;
+}
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid #ddd;
+}
+
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+  border: 1px solid #4CAF50;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+/* MULTIPLE COLUMNS */
+
+.newspaper p {
+  text-align: justify;
+}
+
+.newspaper {
+  column-count: 4;
+  column-gap: 40px;
+  column-rule: 1px solid #ddd;
+  column-width: 250px;
+}
+
+.newspaper h2 {
+  column-span: none;
 }
