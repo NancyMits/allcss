@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="flexbox.css">
+  <title>Flexbox</title>
+</head>
+<body>
+  <!-- FLEXBOX
+  display: flex; -- for parent element
+  FLEX CONTAINER PROPERTIES (PARENT PROPERTIES)
+  flex-direction: defines in which direction the container wants to stack the flex items
+  flex-wrap: specifies whether the flex items should wrap or not
+  flex-flow: flex-direction + flex-wrap
+  justify-content: is used to align the flex items
+  align-items: is used to align the flex items vertically
+  align-content: is used to align the flex lines
+  FLEX ITEM PROPERTIES (CHILDREN PROPERTIES)
+  order: specifies the order of the flex items
+  flex-grow: specifies how much a flex item will grow relative to the rest of the flex items
+  flex-shrink: specifies how much a flex item will shrink relative to the rest of the flex items
+  flex-basis: specifies the initial length of a flex item
+  flex: flex-grow + flex-shrink + flex-basis
+  align-self: specifies the alignment for the selected item inside the flexible container
+-->
+
+<h1>FLEXBOX</h1>
+<h3>flex-container properties</h3>
+<div class="flex-container">
+  <div style="order: 5; flex-grow: 1">The 1st & 5th items have changed order.</div>
+  <div style="order: 2; flex-grow: 1; flex-basis: 150px">The item is always 150px wide.</div>
+  <div style="order: 3; flex-grow: 1"></div>
+  <div style="order: 4; flex-grow: 1"></div>
+  <div style="order: 1; flex-grow: 1">The 1st & 5th items have changed order.</div>
+  <div style="order: 6; flex-grow: 1"></div>
+  <div style="order: 7; flex-grow: 8">The item grows 8 times faster than the rest.</div>
+  <div style="order: 8; flex-grow: 1; flex-shrink: 0">The item does not shrink as much as the rest.</div>
+  <div style="order: 9; flex-grow: 1"></div>
+  <div style="order: 10; flex-grow: 1"></div>
+</div>
+</body>
+</html>
