@@ -1,0 +1,11 @@
+.row>div {
+  border: 1px solid red;
+}
+
+p {
+  text-align: justify;
+}
+
+.row>div:nth-child(2)>p {
+  text-align: center;
+}
